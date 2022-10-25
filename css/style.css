@@ -1,0 +1,181 @@
+body {
+   font-family: Lato, sans-serif;
+
+
+}
+
+.wrapper {
+   overflow: hidden;
+   min-height: 100%;
+   position: relative;
+   background: url(../img/sky.jpg) center top / cover no-repeat;
+}
+
+.superheroes__text {
+   text-align: center;
+   color: red;
+   font-size: 100px;
+   text-transform: uppercase;
+   font-style: italic;
+   padding-top: 370px;
+   text-shadow: 1px 1px 2px red, 0 0 1em rgb(1, 1, 11), 0 0 0.2em blue;
+   animation-name: avengers;
+   animation-duration: 5s;
+   opacity: 0;
+   animation-fill-mode: forwards;
+}
+
+
+@keyframes avengers {
+   0% {
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+
+   }
+}
+
+
+.superheroes___container {
+   width: 100%;
+}
+
+
+
+img {
+   max-width: 100%;
+}
+
+.superheroes__character {
+   max-width: 220px;
+   max-height: 220px;
+   position: absolute;
+}
+
+.ironman {
+   top: 10px;
+   left: 600px;
+   animation-name: ironman;
+   animation-duration: 7s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+   transform: scale(0);
+   animation-delay: 2s;
+}
+
+@keyframes ironman {
+   0% {}
+
+   100% {
+      opacity: 1;
+      transform: scale(1);
+   }
+}
+
+.spiderman {
+   top: 50px;
+
+   animation-name: spiderman;
+   animation-duration: 7s;
+   animation-delay: 3s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+   transform: translate(-150px)
+}
+
+@keyframes spiderman {
+   0% {}
+
+   100% {
+      opacity: 1;
+      transform: translate(200px)
+   }
+}
+
+.blackpanter {
+   top: -330px;
+   right: 200px;
+   animation-name: blackpanter;
+   animation-duration: 5s;
+   animation-delay: 5s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes blackpanter {
+   0% {
+      transform: translateY(-200px);
+   }
+
+   100% {
+      transform: translateY(350px);
+   }
+}
+
+
+.captainamerica {
+   top: 350px;
+   left: 30px;
+   animation-name: captainamerica;
+   animation-duration: 7s;
+   animation-delay: 9s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+@keyframes captainamerica {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      opacity: 1;
+      transform: rotate(360deg);
+   }
+}
+
+.thor {
+   bottom: 150px;
+   right: 230px;
+   animation-name: thor;
+   animation-duration: 7s;
+   animation-delay: 9s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+@keyframes thor {
+   0% {
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1.5);
+   }
+
+}
+
+
+.deadpool {
+   bottom: 100px;
+   right: 750px;
+   animation-name: deadpool;
+   animation-duration: 7s;
+   animation-delay: 12s;
+   animation-fill-mode: forwards;
+   opacity: 0;
+}
+
+@keyframes deadpool {
+   0% {
+      transform: scale(0);
+   }
+
+   100% {
+      opacity: 1;
+      transform: scale(1.3);
+   }
+}
